@@ -1,5 +1,3 @@
-seconds = float(input('Enter number of seconds: '))
-
 def get_hours_since_midnight (seconds):
 
     if seconds < 0 or seconds > 86400:
