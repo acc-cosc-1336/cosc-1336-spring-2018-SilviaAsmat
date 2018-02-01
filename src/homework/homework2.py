@@ -23,7 +23,7 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     '''
     if time_type == 12:
         if hour <1 or hour >12:
-            return "Invalid hours (1-12)"
+            return "Invalid hours (range 1-12)"
         if meridian != "AM" and meridian != "PM":
             return "Invalid meridian"
 
@@ -31,13 +31,13 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
         if hour <0 or hour >23:
             return "Invalid hours (0-23)"
     else:
-        return "Invalid time_type (12 or 24 only)"
+        return "Invalid time_type (range 12 or 24 only)"
 
     if minutes <0 or minutes >59:
         return "Invalid minutes(range 0-59)"
 
     if seconds <0 or seconds >59:
-        return "Invalid seconds (range 0-59)"
+        return "Invalid seconds(range 0-59)"
 
     # At this point, we have valid inputs
     time = ''
