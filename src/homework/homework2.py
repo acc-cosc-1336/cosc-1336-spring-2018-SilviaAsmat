@@ -48,7 +48,7 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     meridian_formatted = ''
 
     if hour <10 and hour >=0:
-        # Hours is a single digit
+        # At this point hour is a single digit
         hours_formatted = '0' + str(hour)
     else:
         hours_formatted = str(hour)
