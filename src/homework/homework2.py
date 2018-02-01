@@ -23,15 +23,15 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     '''
     if time_type == 12:
         if hour <1 or hour >12:
-            return "Invalid hours (range 1-12)"
+            return "Invalid hours(range 1-12)"
         if meridian != "AM" and meridian != "PM":
             return "Invalid meridian"
 
     elif time_type == 24:
         if hour <0 or hour >23:
-            return "Invalid hours (0-23)"
+            return "Invalid hours(range 0-23)"
     else:
-        return "Invalid time_type (range 12 or 24 only)"
+        return "Invalid time_type(12 or 24 only)"
 
     if minutes <0 or minutes >59:
         return "Invalid minutes(range 0-59)"
@@ -48,7 +48,7 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     meridian_formatted = ''
 
     if hour <10 and hour >=0:
-        # At this point hour is a single digit
+        # Hours is a single digit
         hours_formatted = '0' + str(hour)
     else:
         hours_formatted = str(hour)
@@ -68,8 +68,15 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     if time_type == 12:
         meridian_formatted = str(meridian)
 
-    time = hours_formatted + ':' + minutes_formatted + ':' + seconds_formatted +' '+ meridian_formatted
+    if time_type == 12:
+        time = hours_formatted + ':' + minutes_formatted + ':' + seconds_formatted +' '+ meridian_formatted
+
+    if time_type == 24:
+       
+        time = hours_formatted + ':' + minutes_formatted + ':' + seconds_formatted
+
     return time
+
 
 
 def time_from_utc(utc_offset, utc_zero_time):
@@ -82,3 +89,4 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
+
