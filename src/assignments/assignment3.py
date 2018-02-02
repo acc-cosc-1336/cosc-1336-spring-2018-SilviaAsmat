@@ -20,10 +20,10 @@ def decimal_to_binary(number):
     for x in [7,6,5,4,3,2,1,0]:
         value = 2**x
         if number >= value:
-            binary = '1' + binary
+            binary = binary + '1'
             number = number - value
         else:
-            binary = '0' + binary
+            binary = binary + '0'
     return binary
 
 
