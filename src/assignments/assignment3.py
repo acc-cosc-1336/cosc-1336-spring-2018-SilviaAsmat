@@ -71,7 +71,7 @@ def is_prime(n):
     elif n == 2:
         return True
     else:
-        for number in range(2, n+1):
+        for number in range(2, n):
             if ((n % number) == 0):
                 return False
         return True
