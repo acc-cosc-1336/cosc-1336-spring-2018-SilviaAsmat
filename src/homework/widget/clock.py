@@ -94,9 +94,9 @@ class Clock(object):
                                 self.height - 10, width=2, fill="#334455")
 
     def draw_clock_face(self):
-        utc_hour = % 24 #call get_hours_since_midnight with argument self.now after the equal sign:DONT REMOVE % 24
+        utc_hour = get_hours_since_midnight(self.now) % 24 #call get_hours_since_midnight with argument self.now after the equal sign:DONT REMOVE % 24
 
-        self.hour = #call time_from_utc with arguments self.diff and  utc_hour after the equal sign
+        self.hour = time_from_utc(self.diff, utc_hour)#call time_from_utc with arguments self.diff and  utc_hour after the equal sign
         self.canvas.create_oval(15, 15, self.width - 15, self.height - 15,
                                 width=2, fill="#e0e8ff" if self.hour < 12 else "#334")
 
@@ -121,7 +121,7 @@ class Clock(object):
         self._draw_hand(hours_angle + 180, 5, fill=self.hands_colour)
 
     def draw_minute_hand(self):
-        self.minutes = #call get_minutes with argument self.now after the equal sign
+        self.minutes = get_minutes(self.now)#call get_minutes with argument self.now after the equal sign
         minutes_angle = self.minutes / 60 * 360
 
         if time_from_utc(0, self.diff) % 1 == 0.5:
@@ -134,7 +134,7 @@ class Clock(object):
         self._draw_hand(minutes_angle + 180, 5, fill=self.hands_colour)
 
     def draw_second_hand(self):
-        self.seconds = #call get_seconds with argument self.now after the equal sign
+        self.seconds = get_seconds(self.now)#call get_seconds with argument self.now after the equal sign
         seconds_angle = self.seconds / 60 * 360
 
         self._draw_hand(seconds_angle, 70, fill='red',
