@@ -72,11 +72,8 @@ def is_prime(n):
         return true
     else:
         for number in range(2, n+1):
-            current_number = 2
-            if ((n % current_number) == 0):
+            if ((n % number) == 0):
                 return false
-            else:
-                current_number = current_number + number
         return true
 
 
