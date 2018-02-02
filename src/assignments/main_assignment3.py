@@ -18,6 +18,9 @@ print(result)#print the result variable
 #prompt user for a number from keyboard save to a num variable,
 #call sum_square_of_number with argument of
 #num, save return value to result variable, print result variable
+num = int(input("Enter a number: "))
+result = sum_square_of_number(num)
+print(result)
 
 
 #QUESTION 2
@@ -25,7 +28,9 @@ print(result)#print the result variable
 #code to call is_prime with argument of num variable
 #save return value to result variable
 #print result variable
-
+num = int(input("Enter a number: "))
+result = is_prime(num)
+print(result)
 
 
 #QUESTION 3
@@ -33,6 +38,7 @@ print(result)#print the result variable
 #code to call list_of_primes with argument of num variable
 #save return value to result variable
 #print result variable
-
-
+num = int(input("Enter a number: "))
+result = list_of_primes(num)
+print(result)
 
