@@ -67,14 +67,14 @@ def is_prime(n):
     '''
 
     if n == 1:
-        return false
+        return False
     elif n == 2:
-        return true
+        return True
     else:
         for number in range(2, n+1):
             if ((n % number) == 0):
-                return false
-        return true
+                return False
+        return True
 
 
 
