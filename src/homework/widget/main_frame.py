@@ -2,6 +2,7 @@ from tkinter import Frame
 from tkinter import Button
 from src.homework.widget.clock import Clock
 
+
 class MainFrame(Frame):
 
     def __init__(self, parent):
@@ -10,8 +11,8 @@ class MainFrame(Frame):
         self.canvases = []
         for x in range(4):
             self.canvases.append(Clock(self,
-                              zone=['Eastern Standard Time', 'Central Standard Time',
-                                    'Mountain Standard Time', 'Pacific Standard Time'][x], row=0, column=x))
+                                       zone=['Eastern Standard Time', 'Central Standard Time',
+                                             'Mountain Standard Time', 'Pacific Standard Time'][x], row=0, column=x))
 
         Button(self, text='Slow motion',
                    command=self.slow).grid(row=3, column=0)

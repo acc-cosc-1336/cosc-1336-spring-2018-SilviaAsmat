@@ -13,7 +13,7 @@ def get_hours_since_midnight (seconds):
 
 def get_minutes(seconds):
 
-    if seconds < 0 or seconds > 86400 :
+    if seconds < 0 or seconds > 86400:
         return 0
     else:
 

@@ -65,11 +65,11 @@ def get_time(hour, minutes, seconds, time_type, meridian='AM'):
     else:
         seconds_formatted = str(seconds)
 
-    if time_type == 12:
-        meridian_formatted = str(meridian)
+    #if time_type == 12:
+     #   meridian_formatted = str(meridian)
 
     if time_type == 12:
-        time = hours_formatted + ':' + minutes_formatted + ':' + seconds_formatted +' '+ meridian_formatted
+        time = hours_formatted + ':' + minutes_formatted + ':' + seconds_formatted + ' ' + meridian_formatted
 
     if time_type == 24:
        
