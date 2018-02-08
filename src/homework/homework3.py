@@ -8,8 +8,10 @@ def sum_odd_numbers(num):
     '''
     total = 0
     #write your code starting here; use total as the sum total
-
-
+    for i in range(1,num+1):
+        if i %2 != 0:
+            #num is odd
+            total = total+i
     return total
 
 def list_of_even_numbers(num):
@@ -21,10 +23,17 @@ def list_of_even_numbers(num):
     :return: A list of all even numbers up to a num
     '''
     even_numbers = ''
+    i = 1
     #write your code starting here; you'll need to concatenate evens to even_numbers
-
+    while i <num+1:
+        if i %2 == 0:
+            #num is even
+            even_numbers += str(i) + ","
+        i += 1
 
     return even_numbers
+
+
 
 def main1():
     '''
@@ -56,4 +65,11 @@ def main1():
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
     #write your code here
-
+    amount_of_loops = int(input("Enter a number: "))
+    for index in range(1,amount_of_loops+1):
+        print("The current index loop is: ", index)
+        result_odd = sum_odd_numbers(index)
+        print("Sum of odd numbers = ", result_odd)
+        result_even = list_of_even_numbers(index)
+        print("List of even numbers = ", result_even)
+        print("")
