@@ -49,6 +49,8 @@ def sum_square_of_number(number):
 
     return sum_of_squares
 
+sum_square_of_number(10)
+
 def is_prime(n):
     '''
     USE A FOR LOOP
@@ -75,8 +77,6 @@ def is_prime(n):
             if ((n % number) == 0):
                 return False
         return True
-
-
 
 
 def list_of_primes(n):
