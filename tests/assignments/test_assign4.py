@@ -20,16 +20,18 @@ class Test_Assign4(unittest.TestCase):
         In this test case, the test is for no equality.
         :return:
         '''
-        self.assertNotEqual (1, sample_function(2))
+        self.assertNotEqual(1, sample_function(2))
 
 #create two test cases for the factorial function, one test case with a value of 5 and the other with value of 6
 #THE NAME OF THE FUNCTION MUST BEGIN WITH test OTHERWISE THE TestCase suite will not recognize it as a test case.
+    def test_sample_three(self):
+        self.assertNotEqual(6, sample_function(6))
 
 
-
-
+    def test_sample_four(self):
+        self.assertNotEqual(5, sample_function(5))
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
-#unittest.Main(verbosity=2)
+unittest.Main(verbosity=2)
 #add the pound sign back before uploading to Github
 

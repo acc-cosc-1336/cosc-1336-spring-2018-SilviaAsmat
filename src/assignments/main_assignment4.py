@@ -1,3 +1,4 @@
+from src.assignments.assignment4 import factorial
 def main():#void function
     '''
     Create a loop that'll run until the user doesn't type the letter 'y'
@@ -14,6 +15,16 @@ def main():#void function
 
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
+    keep_going = 'y'
+
+    while keep_going == 'y':
+        number = int(input('Enter a number:'))
+        if number>=1 and number <= 10:
+            result = factorial(number)
+            print(result)
+        keep_going = input('(Enter y for yes): ')
+
+
 
 
 
