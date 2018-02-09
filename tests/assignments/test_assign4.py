@@ -32,6 +32,6 @@ class Test_Assign4(unittest.TestCase):
         self.assertNotEqual(5, sample_function(5))
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
-unittest.Main(verbosity=2)
+#unittest.Main(verbosity=2)
 #add the pound sign back before uploading to Github
 

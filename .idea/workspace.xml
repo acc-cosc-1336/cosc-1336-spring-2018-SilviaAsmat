@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main_assignment4.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_assignment4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assignments/main_assignment4.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_assign4.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_assign4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/assignments/test_assign4.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="651">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -102,8 +102,8 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/run_app.py" />
         <option value="$PROJECT_DIR$/src/assignments/assignment4.py" />
-        <option value="$PROJECT_DIR$/tests/assignments/test_assign4.py" />
         <option value="$PROJECT_DIR$/src/assignments/main_assignment4.py" />
+        <option value="$PROJECT_DIR$/tests/assignments/test_assign4.py" />
       </list>
     </option>
   </component>
@@ -687,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/assignments/test_assign4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -719,6 +711,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assignments/main_assignment4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assignments/assignment4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -727,10 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assignments/main_assignment4.py">
+    <entry file="file://$PROJECT_DIR$/tests/assignments/test_assign4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="651">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
