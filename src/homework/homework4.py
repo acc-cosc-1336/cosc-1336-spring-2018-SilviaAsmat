@@ -56,7 +56,7 @@ def get_grade_points(credit_hours, credit_points):
 
 
 
-def get_grade_point_average(credit_points, grade_points):
+def get_grade_point_average(credit_hours, grade_points):
     '''
     Returns grade point average as a decimal value (float)
     :param credit_points: Total credit points for a student.
@@ -64,5 +64,5 @@ def get_grade_point_average(credit_points, grade_points):
     :return: The grade point average for a student
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
-    grade_point_average = credit_points/grade_points
+    grade_point_average = grade_points/credit_hours
     return grade_point_average
