@@ -11,17 +11,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="assignment5.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="assignment5.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assignments/assignment5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_assignment5.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_assignment5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assignments/main_assignment5.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -698,14 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assignments/assignment5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assignments/main_assignment5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -713,6 +705,14 @@
           <folding>
             <element signature="e#54#118#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assignments/assignment5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
