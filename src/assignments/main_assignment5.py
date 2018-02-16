@@ -18,7 +18,7 @@ etc
 def main():
 
     for i in range(1,256):
-        final_string = recursive_decimal_binary(i, '00000000')
+        final_string = recursive_decimal_binary(i)
         print(i,' ',final_string)
 
 
