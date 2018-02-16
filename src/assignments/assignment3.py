@@ -1,4 +1,5 @@
 def decimal_to_binary(number):
+
     '''
     YOU MUST USE A WHILE LOOP
     Given a number return its binary value in 8 bits
