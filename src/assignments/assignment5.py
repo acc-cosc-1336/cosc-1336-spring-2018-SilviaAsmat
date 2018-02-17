@@ -6,38 +6,11 @@ def recursive_decimal_binary(num, bits='00000000'):
     :param num:
     :return:
     '''
-    if num == 0:
-        return bits
+    power_value = 2**bits
+
+    if num == 0 and bits < 0:
+        return ''
+    elif num >= power_value:
+        return '1' + recursive_decimal_binary(num-power_value,bits-1)
     else:
-        # need to add 1 to bits
-        bits_plus_one = add_one_to_bits(bits)
-        return recursive_decimal_binary(num -1, bits_plus_one)
-
-def add_one_to_bits(bits):
-    bits_list = list(bits)
-    carry = True
-    for index in range(7, -1, -1):
-        char = bits_list[index]
-        if char == '0' and carry == True:
-            bits_list[index] = '1'
-            final_string = ''.join(bits_list)
-            return final_string
-        elif char == '0' and carry == False:
-            final_string = ''.join(bits_list)
-            return final_string
-        elif char == '1' and carry == False:
-            final_string = ''.join(bits_list)
-            return final_string
-        elif char == '1' and carry == True:
-            bits_list[index] = '0'
-    final_string = ''.join(bits_list)
-    return final_string
-
-
-
-
-
-
-
-
-
+        return '0'+ recursive_decimal_binary(num,bits-1)
