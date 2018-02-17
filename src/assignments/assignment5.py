@@ -1,4 +1,4 @@
-def recursive_decimal_binary(num, bits='00000000'):
+def recursive_decimal_binary(num, bits=7):
 
     '''
     Given a whole number from the decimal system, converts the number to 8-bit binary
