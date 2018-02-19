@@ -13,6 +13,8 @@ class Test_Assign4(unittest.TestCase):
 
     #write test cases with arguments 85 and 63 for recursive_decimal_binary function
     def test_85(self):
+        #call function to test within the self.assert param
+        #first param is the return, second param is the test
         self.assertEqual('01010101',recursive_decimal_binary(85))
 
     def test_63(self):
