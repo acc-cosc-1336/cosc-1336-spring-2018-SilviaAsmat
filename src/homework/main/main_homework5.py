@@ -26,10 +26,6 @@ def main():
     file_object.write('Total'+'\t'+str(total_price)+'\n')
     file_object.write('Avg Price'+'\t'+str(avg_price))
 
-main()
-
-
-
 
 #Open a file for text reading.
 #Read the saved file and output table
