@@ -30,10 +30,10 @@ def main():
     while i < number_of_students+1:
         grade_points_total = 0
         credit_hours_total = 0
-        for j in range(1,number_of_students+1):
+        for j in range(1, number_of_students+1):
             letter_grade = str(input('Enter a grade:'))
             is_valid = valid_letter_grade(letter_grade)
-            if is_valid == False:
+            if is_valid is False:
                 letter_grade = str(input('Enter a grade:'))
 
             credit_points = get_credit_points(letter_grade)
@@ -48,7 +48,7 @@ def main():
         i += 1
     print("")
 
-    for k in range (0,number_of_students):
+    for k in range(0, number_of_students):
         gpa = gpas[k]
         gpa_formatted = '{0:.2f}'.format(gpa)
         print('Student ', str(k+1),' GPA is: ',gpa_formatted)
