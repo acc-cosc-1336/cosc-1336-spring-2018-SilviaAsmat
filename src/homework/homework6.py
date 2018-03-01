@@ -1,5 +1,4 @@
-'''
-DO NOT USE LISTS
+"""DO NOT USE LISTS
 
 Create a function get_point_mutations that accepts two string parameters, dna_string1 and dna_string2 and returns
 the hamming distance of the strings.,
@@ -21,7 +20,18 @@ Parameter dna_string2: CATCGTAATGACGGCCT
 
 Sample Output (function return value)
 7
-'''
+"""
+
+
+def get_point_mutations(dna_string1, dna_string2):
+    hamming_distance = 0
+    for char in range(0, len(dna_string1)):
+        if dna_string1[char] == dna_string2[char]:
+            hamming_distance += 0
+        else:
+            hamming_distance += 1
+    return hamming_distance
+
 
 '''
 DO NOT USE LISTS
@@ -45,6 +55,24 @@ Sample Output(function return value)
 ACCGGGTTTT
 '''
 
+
+def get_dna_complement(dna_string):
+
+    complement_dna_string = ''
+
+    for ch in range(0, len(dna_string)):
+        if dna_string[ch] == 'A':
+            complement_dna_string = 'T' + complement_dna_string
+        elif dna_string[ch] == 'T':
+            complement_dna_string = 'A' + complement_dna_string
+        elif dna_string[ch] == 'G':
+            complement_dna_string = 'C' + complement_dna_string
+        elif dna_string[ch] == 'C':
+            complement_dna_string = 'G' + complement_dna_string
+
+    return complement_dna_string
+
+
 '''
 DO NOT USE LISTS
 Create a function transcribe_dna_into_rna with a dna_string parameter that returns the rna of the string.
@@ -66,6 +94,20 @@ dna_string: GATGGAACTTGACTACGTAAATT
 Sample Output (function return value)
 GAUGGAACUUGACUACGUAAAUU
 '''
+
+
+def transcribe_dna_into_rna(dna_string):
+
+    rna_string = ''
+
+    for char in range(0, len(dna_string)):
+        if dna_string[char] == 'T':
+            rna_string += 'U'
+        else:
+            rna_string += dna_string[char]
+
+    return rna_string
+
 
 '''
 DO NOT USE LISTS:
@@ -94,7 +136,21 @@ Sample output:
 '''
 
 
-'''
+def get_gc_content(dna_string):
+
+    gc_count = 0
+    string_length = len(dna_string)
+
+    for char in range(0, string_length):
+        if dna_string[char] == 'G' or dna_string[char] == 'C':
+            gc_count += 1
+
+    gc_content = float(gc_count)/float(string_length) * 100.0
+
+    return gc_content
+
+
+"""
 DO NOT USE LISTS
 
 THIS IS OPTIONAL
@@ -128,9 +184,12 @@ parameter dna_string2: ATAT
 
 Sample Output(function return value)
 2 4 10
-'''
+"""
 
-'''
+
+
+
+"""
 DO NOT USE LISTS
 THIS IS OPTIONAL
 Create a function get_consenus_from_dna with 7 dna string parameters that returns 5 values consenus, profilea, profilec,
@@ -189,4 +248,4 @@ return value 4 G: 1 1 6 3 0 1 0 0
 return value 5 T: 1 5 0 0 0 1 1 6
 
 
-'''
+"""

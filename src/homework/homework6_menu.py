@@ -1,4 +1,10 @@
+from src.homework.homework6 import get_dna_complement
+from src.homework.homework6 import get_gc_content
+from src.homework.homework6 import get_point_mutations
+from src.homework.homework6 import transcribe_dna_into_rna
+
 #write import statements for homework 6 functions
+
 
 def menu_options():
     print()
@@ -10,6 +16,7 @@ def menu_options():
     print('6) Most likely Ancestor')
     print('7) Exit')
     print()
+
 
 def run_menu():
 
@@ -45,18 +52,39 @@ def handle_option_1():
     Call the function get_point_mutations and display the mutations to screen.
     Ask user if they want to continue.
     '''
+    continue_loop = 'Y'
+    while continue_loop == 'Y':
+        dna_string_1 = input('Enter DNA string 1: ')
+        dna_string_2 = input('Enter DNA string 2: ')
+        mutations = get_point_mutations(dna_string_1, dna_string_2)
+        print(mutations)
+        continue_loop = input('Enter Y to continue')
+#validate dna_string_1 and dna_string_2
+
 
 def handle_option_2():
     '''
     Write code to read the file dna_complement.dat.
-    For each line string call the function get_dna_complment and display the complement to screen.
+    For each line string call the function get_dna_complement and display the complement to screen.
     '''
+
+    dna_complement_object = open('dna_complement.dat', 'r')
+    for line in dna_complement_object:
+        dna_complement = get_dna_complement(line)
+        print(dna_complement)
+    dna_complement_object.close()
+
 
 def handle_option_3():
     '''
     Write the code to read the file transcribe_dna_to_rna.dat.
     For each line string call the function transcribe_dna_to_rna and display rna to screen.
     '''
+    transcribe_file_object = open('transcribe_dna_to_rna.dat', 'r')
+    for line in transcribe_file_object:
+        rna_string = transcribe_dna_into_rna(line)
+        print(rna_string)
+    transcribe_file_object.close()
 
 def handle_option_4():
     '''
@@ -64,6 +92,11 @@ def handle_option_4():
     call the get_gc_content function with the line string as an argument.
     Display the gc_content for each line.
     '''
+    compute_gc_object = open('compute_gc_content.dat', 'r')
+    for line in compute_gc_object:
+        gc_content = get_gc_content(line)
+        print(gc_content)
+    compute_gc_object.close()
 
 def handle_option_5():
     pass #optional 
