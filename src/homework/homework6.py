@@ -147,7 +147,7 @@ def get_gc_content(dna_string):
 
     gc_content = float(gc_count)/float(string_length) * 100.0
 
-    return gc_content
+    return round(gc_content, 5)
 
 
 """
