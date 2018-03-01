@@ -1,4 +1,6 @@
+from ast import literal_eval as make_tuple
 """DO NOT USE LISTS
+
 
 Create a function get_point_mutations that accepts two string parameters, dna_string1 and dna_string2 and returns
 the hamming distance of the strings.,
@@ -192,8 +194,8 @@ def get_most_likely_ancestor_conensus(dna_string1, dna_string2):
     for i in range(0, len(dna_string1)):
         sub_1 = dna_string1[i:i+4]
         if sub_1 == dna_string2:
-            result_list += str(i+1) + ' '
-    return result_list
+            result_list += str(i+1) + ','
+    return make_tuple(result_list)
 
 
 """
