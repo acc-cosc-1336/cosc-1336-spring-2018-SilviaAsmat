@@ -2,6 +2,8 @@ from src.homework.homework6 import get_dna_complement
 from src.homework.homework6 import get_gc_content
 from src.homework.homework6 import get_point_mutations
 from src.homework.homework6 import transcribe_dna_into_rna
+from src.homework.homework6 import get_most_likely_ancestor_conensus
+from src.homework.homework6 import get_consenus_from_dna
 
 #write import statements for homework 6 functions
 
@@ -99,7 +101,20 @@ def handle_option_4():
     compute_gc_object.close()
 
 def handle_option_5():
-    pass #optional 
+    dna_string1 = input('Enter dna_string1')
+    dna_string2 = input('Enter dna_string2')
+    result = get_most_likely_ancestor_conensus(dna_string1, dna_string2)
+    print(result)
 
 def handle_option_6():
-    pass #optional
+
+    dna_string1 = input('Enter dna_string1')
+    dna_string2 = input('Enter dna_string2')
+    dna_string3 = input('Enter dna_string3')
+    dna_string4 = input('Enter dna_string4')
+    dna_string5 = input('Enter dna_string5')
+    dna_string6 = input('Enter dna_string6')
+    dna_string7 = input('Enter dna_string7')
+
+    result = get_consenus_from_dna(dna_string1, dna_string2, dna_string3, dna_string4, dna_string5, dna_string6, dna_string7)
+    print(result)

@@ -186,14 +186,21 @@ Sample Output(function return value)
 2 4 10
 """
 
+def get_most_likely_ancestor_conensus(dna_string1, dna_string2):
 
+    result_list = ''
+    for i in range(0, len(dna_string1)):
+        sub_1 = dna_string1[i:i+4]
+        if sub_1 == dna_string2:
+            result_list += str(i+1) + ' '
+    return result_list
 
 
 """
 DO NOT USE LISTS
 THIS IS OPTIONAL
 Create a function get_consenus_from_dna with 7 dna string parameters that returns 5 values consenus, profilea, profilec,
-profilet, profilet
+profileg, profilet
 
 Problem
 A matrix is a rectangular table of values divided into rows and columns. An m×n matrix has m rows and n columns. Given 
@@ -238,7 +245,6 @@ dna_string4: AAGCAACC
 dna_string5: TTGGAACT
 dna_string6: ATGCCATT
 dna_string7: ATGGCACT
-dna_string8: ATGCAACT
 
 Sample Output:
 return value 1 Consensus: A T G C A A C T 
@@ -249,3 +255,109 @@ return value 5 T: 1 5 0 0 0 1 1 6
 
 
 """
+
+def get_consenus_from_dna(dna_string1, dna_string2, dna_string3, dna_string4, dna_string5, dna_string6, dna_string7):
+
+    consensus = ''
+    profilea = ''
+    profilet = ''
+    profileg = ''
+    profilec = ''
+    for i in range(0, len(dna_string1)):
+        int_profilea = 0
+        int_profilet = 0
+        int_profileg = 0
+        int_profilec = 0
+        char = dna_string1[i]
+        if char == 'A':
+            int_profilea += 1
+        elif char == 'C':
+            int_profilec += 1
+        elif char == 'G':
+            int_profileg += 1
+        elif char == 'T':
+            int_profilet += 1
+
+        char2 = dna_string2[i]
+        if char2 == 'A':
+            int_profilea += 1
+        elif char2 == 'C':
+            int_profilec += 1
+        elif char2 == 'G':
+            int_profileg += 1
+        elif char2 == 'T':
+            int_profilet += 1
+
+        char3 = dna_string3[i]
+        if char3 == 'A':
+            int_profilea += 1
+        elif char3 == 'C':
+            int_profilec += 1
+        elif char3 == 'G':
+            int_profileg += 1
+        elif char3 == 'T':
+            int_profilet += 1
+
+        char4 = dna_string4[i]
+        if char4 == 'A':
+            int_profilea += 1
+        elif char4 == 'C':
+            int_profilec += 1
+        elif char4 == 'G':
+            int_profileg += 1
+        elif char4 == 'T':
+            int_profilet += 1
+
+        char5 = dna_string5[i]
+        if char5 == 'A':
+            int_profilea += 1
+        elif char5 == 'C':
+            int_profilec += 1
+        elif char5 == 'G':
+            int_profileg += 1
+        elif char5 == 'T':
+            int_profilet += 1
+
+        char6 = dna_string6[i]
+        if char6 == 'A':
+            int_profilea += 1
+        elif char6 == 'C':
+            int_profilec += 1
+        elif char6 == 'G':
+            int_profileg += 1
+        elif char6 == 'T':
+            int_profilet += 1
+
+        char7 = dna_string7[i]
+        if char7 == 'A':
+            int_profilea += 1
+        elif char7 == 'C':
+            int_profilec += 1
+        elif char7 == 'G':
+            int_profileg += 1
+        elif char7 == 'T':
+            int_profilet += 1
+
+        profilea += str(int_profilea) + ' '
+        profilet += str(int_profilet) + ' '
+        profileg += str(int_profileg) + ' '
+        profilec += str(int_profilec) + ' '
+
+        if int_profilec > int_profilea and int_profilec > int_profileg and int_profilec > int_profilet:
+            consensus += 'C' + ' '
+
+        if int_profilet > int_profilec and int_profilet > int_profileg and int_profilet > int_profilea:
+            consensus += 'T' + ' '
+
+        if int_profilea > int_profilet and int_profilea > int_profileg and int_profilea > int_profilec:
+            consensus += 'A' + ' '
+
+        if int_profileg > int_profilec and int_profileg > int_profilet and int_profileg > int_profilea:
+            consensus += 'G' + ' '
+
+    return 'Consensus: ' + consensus, 'A: ' + profilea, 'C: ' + profilec, 'G: ' + profileg, 'T: ' + profilet
+
+
+
+
+
