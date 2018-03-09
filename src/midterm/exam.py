@@ -92,7 +92,7 @@ CREATE A TEST CASE IN THE exam_test.py file.
 
 
 def get_list_min_max(list1):
-    min_max = [list1[1], list1[-1]]
+    min_max = [min(list1[1:]), max(list1[1:])]
     return min_max
 
 
@@ -127,9 +127,10 @@ def get_list_min_max_file():
     for line in quiz_file:
         line_int = []
         line1 = line.split()
-        for i in line1:
-            if line1[i] is int:
-                line_int.append(line[i])
+
+        for i in line1[1:]:
+            line_int.append(int(i))
+            
         max_list_1.append(max(line_int))
         min_list_1.append(min(line_int))
     return_list = [min(min_list_1), max(max_list_1)]
