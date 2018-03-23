@@ -95,7 +95,3 @@ def get_quiz_list(list):
 
 #review files
 
-
-
-
-
