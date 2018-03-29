@@ -1,5 +1,0 @@
-Item	Price
-a	1.0
-s2	2.0
-Total	3.0
-Avg Price	1.5

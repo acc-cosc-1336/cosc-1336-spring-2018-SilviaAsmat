@@ -17,4 +17,9 @@ def main():
         quantity = input('Enter quantity of widget: ')
         dictionary[widget_name] = quantity
         keep_going = input('Enter Y to continue: ')
-    pickle.dump(dictionary, open("save.p", "wb"))
+    pickle_out = open("dict.pickle", "wb")
+    pickle.dump(dictionary, pickle_out)
+    pickle_out.close()
+
+
+main()
