@@ -13,20 +13,20 @@ Create a user controlled loop to continue until y is not typed, in loop...
     Once user types a letter other than y display the Invoice to screen
 '''
 
-
 invoice_items = []
-def Main():
 
+def main():
+    invoice = Invoice('n/a', '0')
     keep_going = 'y'
     while keep_going == 'y':
-        invoice_item = InvoiceItem()
         description = input("Enter description: ")
-        quantity = input("Enter quantity: ")
-        cost = input("Enter cost: ")
+        quantity = int(input("Enter quantity: "))
+        cost = float(input("Enter cost: "))
 
-        invoice_obj.append(invoice_item)
+        invoice_item = InvoiceItem(description, quantity, cost)
+        invoice.add_invoice_item(invoice_item)
         keep_going = input("Enter y to continue: ")
-    print(invoice_obj)
+    invoice.print_invoice()
 
 
 main()

@@ -1,6 +1,6 @@
 import unittest
-from src.assignments.invoice import Invoice
-from src.assignments.invoice_item import InvoiceItem
+from src.assignments.assignment9.invoice import Invoice
+from src.assignments.assignment9.invoice_item import InvoiceItem
 
 
 class Test_Assign8(unittest.TestCase):
