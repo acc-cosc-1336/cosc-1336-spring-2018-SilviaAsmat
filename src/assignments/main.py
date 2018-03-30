@@ -14,7 +14,8 @@ Create a user controlled loop to continue until y is not typed, in loop...
 '''
 
 
-class Main(Invoice):
+invoice_items = []
+def Main():
 
     keep_going = 'y'
     while keep_going == 'y':
