@@ -15,7 +15,7 @@ Create a user controlled loop to continue until y is not typed, in loop...
 
 
 def main():
-    invoice_obj = []
+    invoice_obj = Invoice()
     keep_going = 'y'
     while keep_going == 'y':
         invoice_item = InvoiceItem()
