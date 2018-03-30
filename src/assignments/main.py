@@ -1,5 +1,5 @@
-from src.assignments.invoice_item import InvoiceItem
-from src.assignments.invoice import Invoice
+from src.assignments.assignment9.invoice_item import InvoiceItem
+from src.assignments.assignment9.invoice import Invoice
 #Write import statements for classes invoice and invoice_item
 '''
 LOOK AT THE TEST CASES FOR HINTS
@@ -14,9 +14,8 @@ Create a user controlled loop to continue until y is not typed, in loop...
 '''
 
 
-class main(Invoice):
-    
-    invoice_obj = Invoice()
+class Main(Invoice):
+
     keep_going = 'y'
     while keep_going == 'y':
         invoice_item = InvoiceItem()
