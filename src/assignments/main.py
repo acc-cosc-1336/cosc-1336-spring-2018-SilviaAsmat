@@ -22,7 +22,6 @@ def main():
         description = input("Enter description: ")
         quantity = int(input("Enter quantity: "))
         cost = float(input("Enter cost: "))
-
         invoice_item = InvoiceItem(description, quantity, cost)
         invoice.add_invoice_item(invoice_item)
         keep_going = input("Enter y to continue: ")

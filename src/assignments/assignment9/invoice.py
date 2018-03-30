@@ -21,8 +21,9 @@ class Invoice:
         Write code to iterate the self.invoice_items list and get the invoice self.invoice_total
         :return: the self.invoice_total
         '''
-        for i in self.invoice_items:
-            self.invoice_total += self.invoice_items[i]
+        self.invoice_total = 0
+        for invoice_item in self.invoice_items:
+            self.invoice_total += invoice_item.get_extended_cost()
         return self.invoice_total
 
     def print_invoice(self):
