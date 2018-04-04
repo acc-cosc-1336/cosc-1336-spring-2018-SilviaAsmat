@@ -26,4 +26,6 @@ class Player:
 
         while value1 != value2:
             value1 = self.die1.roll()
+            print("This is value 1: ", value1)
             value2 = self.die2.roll()
+            print("This is value 2: ", value2)

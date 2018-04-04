@@ -14,7 +14,6 @@ class Die:
         '''
         self.sides = 6
 
-
     def roll(self):
         '''
         Defina a roll method that virtually rolls a die and returns the value.
