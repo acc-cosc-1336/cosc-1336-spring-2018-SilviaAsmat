@@ -1,5 +1,5 @@
 import unittest
-
+from src.homework.homework9.die import Die
 #Write the import statement for the Die class
 
 class TestHomework9(unittest.TestCase):
@@ -9,3 +9,4 @@ class TestHomework9(unittest.TestCase):
         Write a test case to ensure that the Die class only rolls values from 1 to 6
 
         '''
+        self.
