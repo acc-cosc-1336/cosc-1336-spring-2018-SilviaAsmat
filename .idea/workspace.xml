@@ -61,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assignments/assignment10/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="635">
@@ -69,6 +69,16 @@
               <folding>
                 <element signature="e#74#131#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +136,6 @@
         <option value="$PROJECT_DIR$/tests/assignments/test_assign9.py" />
         <option value="$PROJECT_DIR$/src/assignments/example.py" />
         <option value="$PROJECT_DIR$/src/assignments/main.py" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/homework/homework9/notes.py" />
         <option value="$PROJECT_DIR$/src/assignments/assignment9/invoice.py" />
         <option value="$PROJECT_DIR$/src/homework/homework9/player.py" />
@@ -139,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/assignments/assignment10/invoice_item.py" />
         <option value="$PROJECT_DIR$/src/assignments/assignment10/invoice.py" />
         <option value="$PROJECT_DIR$/src/assignments/assignment10/main.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -720,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assignments/assignment9/invoice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -783,6 +785,14 @@
           <folding>
             <element signature="e#74#131#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
