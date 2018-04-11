@@ -25,8 +25,8 @@ class Player:
 
             roll1 = self.die1.roll()
             roll2 = self.die2.roll()
-
-            self.game_log.add_score_entry(ScoreEntry(i, roll1, roll2))
+            scoreEntryObject = ScoreEntry(i, roll1, roll2)
+            self.game_log.add_score_entry(scoreEntryObject)
             i += 1
 
             rolled_double = roll1 == roll2

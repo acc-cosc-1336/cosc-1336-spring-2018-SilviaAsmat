@@ -12,14 +12,12 @@ from src.homework.homework10.score_entry import ScoreEntry
 class GameLog:
 
     def __init__(self):
-#        score_entries = ScoreEntry()
         self.score_entries = []
 
     def add_score_entry(self, score_entry):
         self.score_entries.append(score_entry)
 
     def display_log(self):
-        for i in self.score_entries:
-            print(self.score_entries[i])
 
-
+        for value in self.score_entries:
+            print("Entry ID:", value.score_entry_id, "Roll 1:", value.die1value,"Roll 2:", value.die2value)
