@@ -13,9 +13,8 @@ In the method:
 
 
 class Die6(Die):
-    def __init__(self, sides):
+    def __init__(self):
         Die.__init__(self, 6)
-        self.sides = sides
 
     def roll(self):
         print("Rolled ", self.sides, "sided die")

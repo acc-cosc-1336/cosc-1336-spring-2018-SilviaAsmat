@@ -7,8 +7,8 @@ from src.homework.homework11.die8 import Die8
 game_log = GameLog()
 
 #ASSIGNMENT 12: Write statements to create Die6 and Die8 instances
-die6 = Die6
-die8 = Die8
+die6 = Die6()
+die8 = Die8()
 #ASSIGNMENT12: pass the Die6 and Die8 instance object variables to the Player instantiation below as parameters after
 #the game_log parameter
 Player(game_log, die6, die8).roll_doubles()
@@ -20,6 +20,15 @@ game_log.display_log()
 #ASSIGNMENT12: Create a new instance of the Player class and pass it the game log, die6, and die8 instances.
 #ASSIGNMENT12: Call the player instance roll_doubles.
 #ASSIGNMENT12: Call the game log instance display_log method.
+
+game_log2 = GameLog()
+
+die6_2 = Die6()
+die8_2 = Die8()
+
+Player(game_log, die6_2, die8_2).roll_doubles()
+
+game_log.display_log()
 
 
 
