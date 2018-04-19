@@ -19,5 +19,4 @@ class Die8(Die):
 
     def roll(self):
         print("Rolled ", self.sides, " sided die")
-        result = Die.roll(self.sides)
-        return result
+        return Die.roll(self)
