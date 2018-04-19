@@ -26,7 +26,7 @@ game_log2 = GameLog()
 die6_2 = Die6()
 die8_2 = Die8()
 
-Player(game_log, die6_2, die8_2).roll_doubles()
+Player(game_log2, die6_2, die8_2).roll_doubles()
 
 game_log.display_log()
 
