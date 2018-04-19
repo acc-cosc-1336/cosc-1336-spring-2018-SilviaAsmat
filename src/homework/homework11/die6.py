@@ -1,4 +1,5 @@
 from src.homework.homework11.die import Die
+
 #HOMEWORK12: add import statement for Die class
 '''
 Define a Die6 class that inherits from the Die class.
@@ -17,5 +18,5 @@ class Die6(Die):
         Die.__init__(self, 6)
 
     def roll(self):
-        print("Rolled ", self.sides, "sided die")
+        print("Rolled ", self.sides, " sided die")
         return Die.roll(self)
