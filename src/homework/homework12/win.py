@@ -1,5 +1,5 @@
 from src.homework.homework12.converter import Converter
-from tkinter import Tk, Label, Button, Frame
+from tkinter import Tk, Label, Button
 
 
 # In  file win.py create a class named Win that displays the main window
