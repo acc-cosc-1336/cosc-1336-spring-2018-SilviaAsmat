@@ -17,9 +17,9 @@ class Win(Tk):
         Tk.__init__(self, None, None)
 
         self.display_labels = Button(self, text='Display Conversion',
-                                     command=self.display_labels).grid(row=0)
+                                     command=self.display_labels).grid(row=3)
 
-        self.quit_button = Button(self, text='Quit', command=self.destroy).grid(row=3)
+        self.quit_button = Button(self, text='Quit', command=self.destroy).grid(row=3, column=1)
 
         self.mainloop()
 
