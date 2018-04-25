@@ -3,7 +3,7 @@
 # the miles given kilometers.
 
 
-class Converter():
+class Converter:
 
     def get_miles_from_km(self, km):
         return "{0:.2f}".format(km*.621371)
