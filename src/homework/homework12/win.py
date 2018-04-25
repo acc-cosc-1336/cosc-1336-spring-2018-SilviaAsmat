@@ -17,15 +17,14 @@ class Win(Tk):
         Tk.__init__(self, None, None)
 
         self.display_labels = Button(self, text='Display Conversion',
-                                     command=self.display_labels).grid(row=3, column=0)
+                                     command=self.display_labels).grid(row=0)
 
-        self.quit_button = Button(self, text='Quit', command=self.destroy).grid(row=3, column=1)
+        self.quit_button = Button(self, text='Quit', command=self.destroy).grid(row=3)
 
         self.mainloop()
 
     def display_labels(self):
-        self.converter = Converter()
-        km = 100
-        miles = self.converter.get_miles_from_km(km)
-        self.label = Label(self, text='km:' + ' ' + str(km)).grid(row=1)
-        self.label = Label(self, text='miles:' + ' ' + format(miles, '.2f')).grid(row=2)
+        converter = Converter()
+        miles = converter.get_miles_from_km(100)
+        self.label1 = Label(self, text='km: 100 ').grid(row=1)
+        self.label2= Label(self, text='miles: ' + miles).grid(row=2)
