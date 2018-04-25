@@ -15,7 +15,22 @@ class Win:
         converter = Converter()
         miles = str(converter.get_miles_from_km(100))
         self.label2 = tkinter.Label(self.main_window, text='Miles: ' + miles)
+        self.button1= tkinter.Button(self.main_window, text='Display Conversion')
+        self.quit_button = tkinter.Button(self.main_window, text='Quit',\
+                                          command=self.main_window.destroy())
         self.label1.pack()
         self.label2.pack()
+        self.button1.pack()
+        self.quit_button.pack()
 
         tkinter.mainloop()
+
+
+    def display_labels(self):
+
+    def quit(self):
+
+#HW 12:In the Win class add two buttons, one with text 'Display Conversion' and the other one with text 'Quit.
+    # The display button will display the same labels from assignment 12, but this time it will only display after button clicked.
+# Create a display_labels class method and make it the callback for the display button.
+# The quit button will exit the Window.
