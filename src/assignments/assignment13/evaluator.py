@@ -31,7 +31,7 @@ class Evaluator:
         else:
             return "Unacceptable"
 
-    def get_ratings(self, nev,rar,som, oft,voft, alw):
+    def get_ratings(self, nev, rar, som, oft, voft, alw):
         '''
         Students aren't expected to know this material yet!
         '''
