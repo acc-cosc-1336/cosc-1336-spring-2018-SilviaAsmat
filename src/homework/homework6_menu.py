@@ -57,7 +57,15 @@ def handle_option_1():
     continue_loop = 'Y'
     while continue_loop == 'Y':
         dna_string_1 = input('Enter DNA string 1: ')
+        
+        while len(dna_string_1) != 10:
+            dna_string_1 = input('Enter DNA string 1: ')
+        
         dna_string_2 = input('Enter DNA string 2: ')
+        
+        while len(dna_string_2) != 10:
+            dna_string_2 = input('Enter DNA string 2: ')
+        
         mutations = get_point_mutations(dna_string_1, dna_string_2)
         print(mutations)
         continue_loop = input('Enter Y to continue')
