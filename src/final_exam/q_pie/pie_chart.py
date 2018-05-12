@@ -1,11 +1,9 @@
-from src.final_exam.Pie_Arc import Pie_Arc
+class PieChart:
+    def __init__(self, list1):
 
-class PieChart(Pie_Arc):
-    def __init__(self, list):
-        Pie_Arc.__init__(self,"")
-        self.list = list
+        self.list = list1
 
     def draw(self):
-        pie_arc = Pie_Arc('')
-        for i in self.list:
-            pie_arc.draw()
+
+        for arc in self.list:
+            arc.draw()
