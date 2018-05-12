@@ -1,10 +1,8 @@
-from src.final_exam.Pie_Arc import Pie_Arc
-from src.final_exam.PieChart import PieChart
+from src.final_exam.q_pie.pie_arc import PieArc
+from src.final_exam.q_pie.pie_chart import PieChart
 
-pie_arc = Pie_Arc
-pie_arcs = [pie_arc('one'),pie_arc('two'),pie_arc('three'),pie_arc('four')]
+pie_arcs = [PieArc('one'),PieArc('two'),PieArc('three'),PieArc('four')]
 
-pie_chart = PieChart
-pie_chart(pie_arcs)
+pie_chart = PieChart(pie_arcs)
 
-pie_chart()
+pie_chart.draw()
