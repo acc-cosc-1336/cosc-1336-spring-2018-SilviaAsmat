@@ -5,9 +5,11 @@ def display_histogram():
         for i in line1:
             asterisk = '*'
             count = 0
-            while count <line1[i]:
+            while count < int(i):
                 asterisk += '*'
                 count+=1
-            print(line1[i],asterisk)
+            print(i,asterisk)
+        print()
 
     survey_file.close()
+
