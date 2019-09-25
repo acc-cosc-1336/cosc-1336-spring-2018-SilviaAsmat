@@ -25,7 +25,10 @@ def main():
     avg_price = total_price / sales_records
     file_object.write('Total'+'\t'+str(total_price)+'\n')
     file_object.write('Avg Price'+'\t'+str(avg_price))
+    
+    file_object.close()
 
+main() 
 
 #Open a file for text reading.
 #Read the saved file and output table
