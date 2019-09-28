@@ -28,10 +28,9 @@ Sample Output (function return value)
 def get_point_mutations(dna_string1, dna_string2):
     hamming_distance = 0
     for char in range(0, len(dna_string1)):
-        if dna_string1[char] == dna_string2[char]:
-            hamming_distance += 0
-        else:
+        if dna_string1[char] != dna_string2[char]:
             hamming_distance += 1
+
     return hamming_distance
 
 
@@ -192,7 +191,7 @@ def get_most_likely_ancestor_conensus(dna_string1, dna_string2):
 
     result_list = ''
     for i in range(0, len(dna_string1)):
-        sub_1 = dna_string1[i:i+4]
+        sub_1 = dna_string1[i:i+len(dna_string2)]
         if sub_1 == dna_string2:
             result_list += str(i+1) + ','
     return make_tuple(result_list)
